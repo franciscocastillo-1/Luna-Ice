@@ -265,4 +265,30 @@ body {
     .navbar { flex-direction: column; gap: 15px; padding: 15px; }
     .mapa-box { height: 250px; }
 }
+.container-btn-regresar {
+    text-align: center;
+    margin-top: 50px; /
+}
 
+.btn-regresar {
+    background: transparent;
+    color: var(--verde-fuerte);
+    border: 2px solid var(--verde-fuerte);
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-regresar i {
+    margin-right: 8px; 
+}
+
+.btn-regresar:hover {
+    background: var(--verde-fuerte);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(74, 103, 65, 0.2);
+}
