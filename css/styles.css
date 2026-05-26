@@ -103,11 +103,14 @@ body {
     align-items: center;
 }
 .mapa-box { 
-    background: #eee; 
+    background: #1e1e1e;
     border-radius: 15px;
-    overflow: hidden;
+    overflow: hidden; 
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     height: 350px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .info-datos h3 {
     font-size: 1.8rem;
