@@ -1,26 +1,31 @@
 :root {
     --verde-luna: #4a6741;
     --crema: #fdfaf6;
-    --chocolate: #3d2b1f;
-    --rosa: #e6b8af;
+    --marron-oscuro: #3d2b1f;
+    --blanco: #ffffff;
 }
 
-body { font-family: sans-serif; background-color: var(--crema); color: var(--chocolate); margin: 0; }
+body { font-family: 'Montserrat', sans-serif; margin: 0; background-color: var(--crema); }
 
-header { background-color: var(--verde-luna); color: white; padding: 3rem; text-align: center; }
+.navbar { display: flex; justify-content: space-between; padding: 20px 10%; background: var(--blanco); }
+.logo { font-weight: bold; color: var(--verde-luna); }
+.navbar ul { display: flex; list-style: none; gap: 20px; }
+.navbar a { text-decoration: none; color: var(--marron-oscuro); font-size: 0.9rem; }
 
-h2 { text-align: center; color: var(--verde-luna); margin-top: 2rem; }
+.hero { background: var(--crema); padding: 60px 10%; text-align: center; border-bottom: 8px solid var(--marron-oscuro); }
+.hero h1 { color: var(--verde-luna); font-size: 2.5rem; }
+.btn-primary { background: var(--verde-luna); color: white; padding: 12px 30px; text-decoration: none; display: inline-block; margin-top: 20px; border-radius: 5px; }
 
-.galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 2rem; }
+.recomendaciones { background: var(--marron-oscuro); color: white; padding: 40px 10%; text-align: center; }
+.menu-grid { display: flex; justify-content: center; gap: 30px; margin-top: 20px; }
+.card { background: var(--blanco); color: var(--marron-oscuro); padding: 20px; border-radius: 10px; width: 250px; }
 
-.card { background: white; padding: 20px; border-radius: 15px; border: 2px solid var(--rosa); text-align: center; }
+.contacto { padding: 40px 10%; }
+.contacto-container { display: flex; gap: 40px; align-items: center; }
+.mapa-placeholder { background: #eee; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; }
+.btn-whatsapp { background: var(--verde-luna); color: white; padding: 15px; display: block; text-align: center; text-decoration: none; border-radius: 5px; margin-top: 20px; font-weight: bold; }
 
-.mapa { padding: 2rem; }
-
-/* Botón flotante */
-.whatsapp-float {
-    position: fixed; bottom: 30px; right: 30px;
-    background-color: #25d366; padding: 15px; border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000;
+@media (max-width: 768px) {
+    .contacto-container { flex-direction: column; }
+    .menu-grid { flex-direction: column; align-items: center; }
 }
-.whatsapp-float img { width: 35px; }
