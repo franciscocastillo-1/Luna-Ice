@@ -4,35 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna Ice | Batidos Artesanales</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>LUNA ICE</h1>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h2>Refrescando tus mejores momentos</h2>
-            <p>Batidos naturales, hechos con amor en Juigalpa.</p>
-        </section>
+    <nav class="navbar">
+        <div class="logo">LUNA ICE</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#ubicacion">Ubícanos</a></li>
+        </ul>
+    </nav>
 
-        <section class="info">
-            <div class="ubicacion">
-                <h3>📍 Ubicación</h3>
-                <p>4J5H+XC6, Juigalpa, Nicaragua</p>
+    <section id="inicio" class="hero">
+        <h1>BIENVENIDOS A LUNA ICE</h1>
+        <p>¡Descubre el Sabor Artesanal en Cada Batido!</p>
+        <a href="#menu" class="btn-primary">VER MENÚ</a>
+    </section>
+
+    <section id="menu" class="recomendaciones">
+        <h2>NUESTRAS RECOMENDACIONES</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <h3>Batido de Fresa</h3>
+                <p>Un clásico refrescante</p>
+                <span>$2.00</span>
             </div>
-            <div class="contacto">
-                <h3>📞 Pedidos</h3>
-                <p>WhatsApp: 8428-2980</p>
+            <div class="card">
+                <h3>Luna de Chocolate</h3>
+                <p>Rico y cremoso</p>
+                <span>$2.00</span>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <a href="https://wa.me/50584282980" class="whatsapp-float" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
+    <section id="ubicacion" class="contacto">
+        <h2>CONTACTANOS & UBICANOS</h2>
+        <div class="contacto-container">
+            <div class="mapa-placeholder">Mapa de Juigalpa</div>
+            <div class="datos">
+                <p>📍 <strong>Dirección:</strong> 4J5H+XC6, Juigalpa.</p>
+                <p>📞 <strong>Teléfono:</strong> 8428-2980</p>
+                <p>📸 <strong>Instagram:</strong> @luna_ice___</p>
+                <a href="https://wa.me/50584282980" class="btn-whatsapp">WHATSAPP DIRECTO</a>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
