@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luna Ice | Batidos Artesanales</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="logo-container">
             <img src="Logo luna.png" alt="Logo Luna Ice" class="logo-img">
-            <span>LUNA ICE</span>
+            <span class="logo-text">LUNA ICE</span>
         </div>
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
@@ -21,19 +22,26 @@
     </nav>
 
     <header id="inicio" class="hero">
-        <h1>Luna Ice: Refrescando Juigalpa con Sabor Artesanal</h1>
-        <p>Bienvenido, disfruta de la experiencia natural en cada batido.</p>
-        <a href="Menu.html" class="btn-main">Ver Nuestro Menú</a>
+        <div class="hero-content">
+            <h1>Luna Ice: Refrescando Juigalpa con Sabor Artesanal</h1>
+            <p>Bienvenido, disfruta de la experiencia natural en cada batido.</p>
+            <a href="Menu.html" class="btn-main">Ver Nuestro Menú</a>
+        </div>
     </header>
+
     <section id="ubicacion" class="footer-section">
         <div class="contacto-grid">
-            <div class="mapa-box">Mapa de Juigalpa</div>
+            <div class="mapa-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3903.2843572886735!2d-85.364402!3d12.106385!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA2JzIzLjAiTiA4NcKwMjEnNTEuOCJX!5e0!3m2!1ses!2sni!4v1700000000000!5m2!1ses!2sni" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
             <div class="info-datos">
-                <h3>Contactanos & Ubicanos</h3>
-                <p>📍 Dirección: 4J5H+XC6, Juigalpa.</p>
-                <p>📞 Tel: 84282980</p>
-                <p>📸 @luna_ice___</p>
-                <a href="https://wa.me/50584282980" class="btn-wsp">¡Pide por WhatsApp aquí!</a>
+                <h3>Contáctanos & Ubícanos</h3>
+                <p class="dato-item">📍 <strong>Dirección:</strong> 4J5H+XC6, Juigalpa.</p>
+                <p class="dato-item">📞 <strong>Tel:</strong> 84282980</p>
+                <p class="dato-item">📸 <strong>Instagram:</strong> @luna_ice___</p>
+                <a href="https://wa.me/50584282980" class="btn-wsp">
+                    <i class="fab fa-whatsapp"></i> ¡Pide por WhatsApp aquí!
+                </a>
             </div>
         </div>
     </section>
