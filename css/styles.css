@@ -1,0 +1,26 @@
+:root {
+    --verde-luna: #4a6741;
+    --crema: #fdfaf6;
+    --chocolate: #3d2b1f;
+    --rosa: #e6b8af;
+}
+
+body { font-family: sans-serif; background-color: var(--crema); color: var(--chocolate); margin: 0; }
+
+header { background-color: var(--verde-luna); color: white; padding: 3rem; text-align: center; }
+
+h2 { text-align: center; color: var(--verde-luna); margin-top: 2rem; }
+
+.galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 2rem; }
+
+.card { background: white; padding: 20px; border-radius: 15px; border: 2px solid var(--rosa); text-align: center; }
+
+.mapa { padding: 2rem; }
+
+/* Botón flotante */
+.whatsapp-float {
+    position: fixed; bottom: 30px; right: 30px;
+    background-color: #25d366; padding: 15px; border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000;
+}
+.whatsapp-float img { width: 35px; }
