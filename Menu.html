@@ -1,8 +1,84 @@
-<section id="menu" class="menu-section">
-        <h2>Nuestros Batidos</h2>
-        <div class="grid-productos">
-            <div class="card card-fresa"><h3>Batido Luna Fresa</h3><p>Un clásico refrescante</p></div>
-            <div class="card card-choco"><h3>Batido ChocoCacao</h3><p>Para amantes del chocolate</p></div>
-            <div class="card card-pumpkin"><h3>Batido Pumpkin</h3><p>Sabor de temporada</p></div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Luna Ice</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Luna Ice" class="logo-img">
+            <span class="logo-text">LUNA ICE</span>
         </div>
-    </section>
+        <ul class="nav-links">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="Menu.html" class="active">Menú</a></li>
+            <li><a href="index.html#ubicacion">Ubícanos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado de la página de menú -->
+    <header class="menu-header">
+        <h1>Nuestro Menú Artesanal</h1>
+        <p>Cada batido está elaborado con frutas frescas y un toque de amor natural.</p>
+    </header>
+
+    <!-- Sección de la cuadrícula de productos -->
+    <main class="menu-container">
+        <div class="menu-grid">
+            
+            <!-- Tarjeta 1: Luna Fresa -->
+            <div class="menu-card">
+                <div class="card-img-box">
+                    <!-- Reemplaza 'fresa.png' por la ruta de tu imagen real -->
+                    <img src="images/fresa.png" alt="Batido Luna Fresa" class="product-img">
+                </div>
+                <div class="card-info">
+                    <span class="tag-categoria">Clásico</span>
+                    <h3>Batido Luna Fresa</h3>
+                    <p>Un clásico refrescante preparado con fresas seleccionadas de la mejor calidad.</p>
+                    <div class="card-footer-price">
+                        <span class="precio">C$ 80.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: ChocoCacao -->
+            <div class="menu-card">
+                <div class="card-img-box">
+                    <!-- Reemplaza 'chocolate.png' por la ruta de tu imagen real -->
+                    <img src="images/chocolate.png" alt="Batido ChocoCacao" class="product-img">
+                </div>
+                <div class="card-info">
+                    <span class="tag-categoria">Especial</span>
+                    <h3>Batido ChocoCacao</h3>
+                    <p>Para amantes del chocolate intenso. Puro cacao artesanal nicaragüense.</p>
+                    <div class="card-footer-price">
+                        <span class="precio">C$ 95.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Pumpkin -->
+            <div class="menu-card">
+                <div class="card-img-box">
+                    <!-- Reemplaza 'pumpkin.png' por la ruta de tu imagen real -->
+                    <img src="images/pumpkin.png" alt="Batido Pumpkin" class="product-img">
+                </div>
+                <div class="card-info">
+                    <span class="tag-categoria">Temporada</span>
+                    <h3>Batido Pumpkin</h3>
+                    <p>Sabor de temporada con un balance perfecto de especias y calabaza cremosa.</p>
+                    <div class="card-footer-price">
+                        <span class="precio">C$ 90.00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
